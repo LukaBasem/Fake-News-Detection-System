@@ -1,0 +1,54 @@
+I built a full AI fact-checking system using FastAPI + LLM (llama3 via Ollama) + News API.
+
+I want you to explain the project from scratch in a very clear, structured way as if you are teaching a junior developer.
+
+Explain:
+
+1. Overall idea of the system
+- What problem it solves
+- How the pipeline works end-to-end
+
+2. Backend architecture
+- FastAPI role
+- /analyze endpoint workflow
+
+3. AI part
+- How we used llama3
+- How claims are extracted
+- Why JSON parsing is needed
+- Why prompt engineering matters
+
+4. Search system
+- How NewsAPI is used
+- Why keyword extraction is important
+- Why sentence-based search failed
+- How we fixed it using query generation
+
+5. Fact-checking logic
+- How each claim is verified against articles
+- Why we use TRUE / FALSE / UNKNOWN
+- What confidence score means
+
+6. Error handling improvements
+- Timeout issues with LLM
+- Why we added fallback logic
+- Why parsing sometimes fails
+
+7. Final system flow (step-by-step)
+Explain the full pipeline from input text → output result
+
+8. Weaknesses of the system
+Be honest:
+- where it can fail
+- why "UNKNOWN" happens often
+- limitations of NewsAPI and local LLM
+
+9. How to improve it further
+Give advanced upgrades like:
+- RAG
+- vector databases
+- better models
+- production deployment
+
+Keep it structured, technical but easy to understand.
+No code needed, only explanation.
